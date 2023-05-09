@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="100_im_yuh_nuh_zey_shuh_n">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="DEV-SRVSQL:KPHC\amaskey">
+          <Created>2021-12-14T11:34:17.2806279-10:00</Created>
+          <Type>SQL</Type>
+          <Server>DEV-SRVSQL</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="0.EMR_VaccineGiven.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>0.EMR_VaccineGiven.sql</FullPath>
+        </FileNode>
+        <FileNode Name="0.EMR_VacineSetup.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>0.EMR_VacineSetup.sql</FullPath>
+        </FileNode>
+        <FileNode Name="1.CreateDatabase.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DEV-SRVSQL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DEV-SRVSQL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>1.CreateDatabase.sql</FullPath>
+        </FileNode>
+        <FileNode Name="2.dbo.ssis_ImmunizationSetup.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DEV-SRVSQL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DEV-SRVSQL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>2.dbo.ssis_ImmunizationSetup.sql</FullPath>
+        </FileNode>
+        <FileNode Name="3.dbo.ssis_ImmunizationGiven.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DEV-SRVSQL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DEV-SRVSQL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>3.dbo.ssis_ImmunizationGiven.sql</FullPath>
+        </FileNode>
+        <FileNode Name="4.ssis_VaccineGroup.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DEV-SRVSQL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DEV-SRVSQL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>4.ssis_VaccineGroup.sql</FullPath>
+        </FileNode>
+        <FileNode Name="5.ssis_VaccineBrand.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DEV-SRVSQL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DEV-SRVSQL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>5.ssis_VaccineBrand.sql</FullPath>
+        </FileNode>
+        <FileNode Name="6.ssis_VaccineLotNumber.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DEV-SRVSQL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DEV-SRVSQL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>6.ssis_VaccineLotNumber.sql</FullPath>
+        </FileNode>
+        <FileNode Name="7.ssis_VaccineGiven.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DEV-SRVSQL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DEV-SRVSQL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>7.ssis_VaccineGiven.sql</FullPath>
+        </FileNode>
+        <FileNode Name="8.dbo.view_ImminizationDetails.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DEV-SRVSQL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DEV-SRVSQL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>8.dbo.view_ImminizationDetails.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
