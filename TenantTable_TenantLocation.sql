@@ -5,6 +5,8 @@ create table Immunization.dbo.TenantLocation
 (
 	LocationId int identity(1,1),
 	LocationName varchar(100) not null,
+	TenantID int,
+	constraint fk_tenantId_vaccineGiven foreign key (TenantID) references Tenant(TenantID)
 );
 go
 select * from Immunization.dbo.TenantLocation
