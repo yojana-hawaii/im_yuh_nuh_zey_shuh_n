@@ -14,11 +14,12 @@
 * View ImmunizationDetails         - Simple view to show how tables relate
 
   #### Immunization.Centricity
-  * SourceTable ContentList              - 
-  * SourceTable Immunization             -
-  * IntermediateTable ImmunizationSetip  -
-  * IntermediateTable ImmunizationGiven  -
-  * StoredProcedure VaccineGroup         -
-  * StoredProcedure VaccineBrand         -
-  * StoredProcedure VaccineLotNumber     -
-  * StoredProcedure VaccineGiven         -
+  * SourceTable ContentList              - Table in Centricity to store immunization setup like vaccine group, brand, lot number etc.
+  * SourceTable Immunization             - Table in Centricity to store immunization administered
+  * IntermediateTable ImmunizationSetup  - Intermediate table to hold data flattened immunization data structure. From nodes and namespace to Flat data structure
+  * IntermediateTable ImmunizationGiven  - Optional. Stored procedure for different use case. 
+    
+  * StoredProcedure VaccineGroup         - Pull vaccine group from ImmunizationSetup. Do we need this if shared table VaccineGroup is going to be storing all the vaccines.
+  * StoredProcedure VaccineBrand         - Pull vaccine group from ImmunizationSetup. Do we need this if shared table VaccineBrand is going to be storing all the brand from CDC website.
+  * StoredProcedure VaccineLotNumber     - Pull latest lot numbers from ImmunizationSetup. When a given vaccine lot empty, it is deleted in EMR. Need to save it here as inactive lot.
+  * StoredProcedure VaccineGiven         - Pull from ImmunizationGiven. Query can be updated to pull data directly from EMR tables.
