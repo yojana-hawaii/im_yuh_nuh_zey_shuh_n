@@ -7,6 +7,7 @@
   
 * SharedTable **VaccineGroup**     - All Vaccine Groups like Hep B, MMR, Flu etc.
 * SharedTable **VaccineBrand**     - Manufacturer specific. Hep B (Engerix-B, Twinrix), Flu ( Fluzone, Fluarix). Each health center has its own inventory but master list in CDC table
+* SharedTable **VaccineProgram**   - Emum for vaccine program and funding source in one. May have to separate
   
 * TenantTable **VaccineLotNumber** - Lot available in the cliniuca. Example. Hep B > Engerix-B (lot A ⇒ Exp Date mm/dd/yy, lot B ⇒ Exp Date mm/dd/yy), FLU > Fluzone (lot Z ⇒ Exp Date mm/dd/yy, lot Y ⇒ Exp Date mm/dd/yy)
 * TenantTable **VaccineGiven**     - Data from EMR. Centricity require stored procedure to pull data. Athena sends data via API
