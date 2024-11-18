@@ -1,9 +1,11 @@
 
 use Immunization
 go
+--drop table if exists Immunization.dbo.TenantLocation
+--go
 create table Immunization.dbo.TenantLocation
 (
-	LocationId int identity(1,1),
+	LocationId int identity(1,1) primary key,
 	LocationName varchar(100) not null,
 	TenantID int,
 	constraint fk_tenantId_vaccineGiven foreign key (TenantID) references Tenant(TenantID)

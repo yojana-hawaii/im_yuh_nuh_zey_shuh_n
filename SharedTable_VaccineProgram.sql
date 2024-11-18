@@ -10,7 +10,7 @@ Do I need to separate this or keep it as same enum
 **/
 create table Immunization.dbo.VaccineSource
 (
-	VaccineSourceId int identity(1,1),
+	VaccineSourceId int identity(1,1) primary key,
 	VaccineSource varchar(100) not null,
 );
 go
@@ -26,6 +26,6 @@ union
 select 'Private'
 union
 select 'Donated'
-
+go
 select * from Immunization.dbo.VaccineSource;
 go
